@@ -1,0 +1,139 @@
+body {
+	background-image: url(images/photo.jpg);
+}
+.drop-shadow {
+            position:relative;
+            width:45%;    
+            padding:1em; 
+            margin:2em auto; 
+            background:#fff;
+            -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 60px rgba(0, 0, 0, 0.1) inset;
+               -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+                    box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+        }
+.drop-shadow:before,
+        .drop-shadow:after {
+            content:"";
+            position:absolute; 
+            z-index:-2;
+            bottom:15px;
+            left:10px;
+            width:50%;
+            height:20%;
+        }
+
+        .drop-shadow:after{                 
+            right:10px; 
+            left:auto;
+        }
+.raised:before {
+            width:auto;
+            right:10px;
+            left:10px;
+            bottom:0;
+            -webkit-box-shadow:0 8px 10px rgba(0, 0, 0, 0.5);
+               -moz-box-shadow:0 8px 10px rgba(0, 0, 0, 0.5);
+                    box-shadow:0 8px 10px rgba(0, 0, 0, 0.5);
+        }
+h2 
+{ color: orange; font: bold 34px Helvetica, Arial, Sans-Serif;
+           text-shadow: 1px 1px #6302fe, 2px 2px #6302fe, 3px 3px #6302fe;
+		     -webkit-transition: all 0.12s ease-out;
+		     -moz-transition: all 0.12s ease-out;
+		     -o-transition: all 0.12s ease-out;
+}
+h2:hover 
+{
+	text-shadow: 1px 1px #6302fe, 2px 2px #6302fe, 3px 3px #6302fe, 4px 4px #6302fe, 5px 5px #6302fe, 6px 6px #6302fe;
+}
+.p-bold {
+	font-weight: bold;
+}
+#app {
+  margin: 1.75em auto;
+  padding: 0.75em;
+  max-width: 50em;
+}
+ol {
+	list-style-type: decimal;
+}
+.container {
+  margin-bottom: 1.5em;
+}
+
+.btn-action-delete {
+  color: #cc4b37;
+  cursor: pointer;
+}
+
+.accordion {
+  padding: 0;
+}
+.accordion div:not(:last-child) {
+  border-bottom: 1px solid rgba(10, 10, 10, 0.1);
+}
+.accordion div:last-child .accordion-item-details {
+  border-radius: 5px;
+}
+.accordion dd {
+  margin-left: 0;
+}
+
+.accordion-item-trigger,
+.accordion-item-details-inner {
+  padding: 0.75rem 1.25rem;
+}
+
+.accordion-item-title {
+  position: relative;
+}
+.accordion-item-title h4 {
+  font-size: 1.25rem;
+  margin-bottom: 0;
+  padding-right: 1.25rem;
+}
+
+.accordion-item-trigger {
+  width: 100%;
+  text-align: left;
+  background-color: white;
+  border: none;
+}
+
+.accordion-item-trigger-icon {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 1.25rem;
+  bottom: 0;
+  margin: auto;
+  width: 8px;
+  height: 8px;
+  border-right: 2px solid #363636;
+  border-bottom: 2px solid #363636;
+  -webkit-transform: translateY(-2px) rotate(45deg);
+          transform: translateY(-2px) rotate(45deg);
+  -webkit-transition: -webkit-transform 0.2s ease;
+  transition: -webkit-transform 0.2s ease;
+  transition: transform 0.2s ease;
+  transition: transform 0.2s ease, -webkit-transform 0.2s ease;
+}
+.is-active .accordion-item-trigger-icon {
+  -webkit-transform: translateY(2px) rotate(225deg);
+          transform: translateY(2px) rotate(225deg);
+}
+
+.accordion-item-details {
+  overflow: hidden;
+  background-color: whitesmoke;
+}
+
+.accordion-item-enter-active, .accordion-item-leave-active {
+  will-change: height;
+  -webkit-transition: height 0.2s ease;
+  transition: height 0.2s ease;
+}
+
+.accordion-item-enter, .accordion-item-leave-to {
+  height: 0 !important;
+}
