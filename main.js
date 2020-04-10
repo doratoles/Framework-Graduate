@@ -52,7 +52,7 @@ const exampleData2 = [
     title: 'Доповнення',
     details: `
       <p class="p-bold">Посилання на сайт з дизайном: <a href="https://www.figma.com/file/IdWIVvVL51flhApBXigmCf/scores?node-id=0%3A1" target="_blank">Дизайн</a></p>
-	  <p class="p-bold">Реалізація проекту: <a href="https://github.com/TeamSevenFrameworks/JournalWebPage" target="_blank">Project <—-</a></p>
+	  <p class="p-bold">Реалізація проекту: <a href="https://github.com/TeamSevenFrameworks/JournalWebPage" target="_blank">Project</a></p>
     `
   }
 ]
